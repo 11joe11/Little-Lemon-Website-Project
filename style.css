@@ -127,7 +127,7 @@ footer p {
 
 .main-offer {
     width: 100%;
-    background-image: url('/banner2edited.jpg');
+    background-image: url('./banner2edited.jpg');
     padding: 20px;
     border-radius: 1rem;
 }
