@@ -1,0 +1,332 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #edefee;
+    font-family: 'Markazi Text', serif;
+    margin: 3rem 5%;
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 1.5rem 0;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+.offer:hover , .offer2:hover {
+    background-color: #333333;
+}
+
+.offer:hover, .offer2:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s;
+} 
+
+header img {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+nav {
+    background-color: #333333;
+    border-radius: 1rem;
+    margin: 1rem 0;
+}
+
+nav ul {
+    list-style: none;
+    font-size: 2rem;
+    text-align: center;
+    padding-inline-start: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0.25rem;
+}
+
+nav ul a {
+    color: #edefee;
+    text-decoration: none;
+    margin: 40px;
+}
+
+nav ul a:active,
+nav ul a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 0.1rem;
+}
+
+section {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+article {
+    flex: 1;
+    border-radius: 1rem;
+}
+
+article img {
+    max-width: 100%;
+}
+
+main article {
+    background-color: #fbdabb79;
+    padding: 0 1rem;
+}
+
+/* #hero {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+    background-size: cover;
+    background-position: 75%;
+    color: white;
+} */
+
+/* #hero p {
+    max-width: 75%;
+} */
+
+/* For center-aligned image and copyright text */
+footer {
+    display: flex;
+    justify-content: center; /* Horizontally center items */
+    align-items: center; /* Vertically center items */
+    color: black;
+}
+
+footer img {
+    max-width: 50%;
+}
+
+
+footer p {
+    font-size: 0.8rem;
+    margin-bottom: 17px;
+    color: #495e57;
+    font-weight: bold;
+}
+
+
+.image-footer {
+    width: 60px;
+    height: auto;
+    margin: 15px 10px 20px 10px; /* Adjust margins as needed */
+}
+
+
+.main-offer {
+    width: 100%;
+    background-image: url('/Meta-Train-Website/Picture folder/banner2edited.jpg');
+    padding: 20px;
+    border-radius: 1rem;
+}
+
+.offer {
+    font-weight: bold;
+    font-size: 3rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.offer + p {
+    color: #ffffff;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.main-sub {
+    display: flex;
+    margin-top: 25px;
+}
+
+.sub-offer {
+    flex: 1;
+    height: auto;
+    margin-right: 10px;
+    background-color: #f4e5d6;
+    padding: 20px;
+    border-radius: 1rem;
+}
+
+.sub-offer img {
+    width: 220px;
+    height: 150px;
+    margin: 5px;
+}
+
+.sub-offer h2 {
+    font-weight: bold;
+    font-size: 3rem;
+    color: black;
+}
+
+.sub-offer p {
+    color: black;
+    font-size: 20px;
+    font-style: italic;
+    margin-right: 30px;
+}
+
+
+/* hr {
+    width: 90%; 
+    height: 2px;
+    border-style: solid;
+    background-color: black;
+    margin: 10px auto; 
+} */
+
+.copyright {
+    text-align: right;
+    /* font-size: 0.75em; */
+    margin-right: 20px;
+}
+
+
+
+
+/* For left-aligned image and copyright text */
+
+/* footer {
+    display: flex;
+    align-items: center; /* Vertically center items */
+/*
+    color: black;
+}
+
+.image-footer {
+    width: 60px;
+    height: auto;
+    margin: 15px 10px 20px 10px; /* Adjust margins as needed */
+/*
+}
+
+footer p {
+    font-size: 0.75em;
+    margin-left: 20px; /* Adjust the left margin as needed */
+/*
+} */
+
+
+
+
+
+
+
+
+/* For right-aligned image and copyright text */
+
+/*
+footer {
+    display: flex;
+    justify-content: flex-end; /* Horizontally align items to the right */
+    /*
+    align-items: center; /* Vertically center items */
+    /*
+    color: black;
+}
+
+.image-footer {
+    width: 60px;
+    height: auto;
+    margin: 15px 10px 20px 10px; /* Adjust margins as needed */
+    /*
+}
+
+footer p {
+    font-size: 0.75em;
+    margin-right: 20px; /* Adjust the right margin as needed */
+    /*
+}
+
+} */
+
+
+
+
+
+/**To be responsive */
+
+/* Default styles for all screens */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #edefee;
+    font-family: 'Markazi Text', serif;
+    margin: 3rem 5%;
+}
+
+/* Styles for screens up to 768px (phones) */
+@media (max-width: 768px) {
+    header img {
+        width: 80%; /* Adjust image size for smaller screens */
+    }
+    
+    nav ul {
+        font-size: 1.5rem; /* Decrease font size for smaller screens */
+    }
+    
+    .main-offer {
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+    
+    .offer {
+        font-size: 2rem; /* Adjust font size for smaller screens */
+    }
+    
+    .offer2 {
+        font-size: 1.2rem; /* Adjust font size for smaller screens */
+    }
+    
+    .sub-offer {
+        flex: 1;
+        height: auto;
+        margin-right: 0; /* Remove margin for smaller screens */
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+    
+    .sub-offer img {
+        width: 100%; /* Make images full width for smaller screens */
+    }
+    
+    .sub-offer h2 {
+        font-size: 2rem; /* Adjust font size for smaller screens */
+    }
+    
+    .sub-offer p {
+        font-size: 1rem; /* Adjust font size for smaller screens */
+        margin-right: 0; /* Remove margin for smaller screens */
+    }
+    
+    footer img {
+        max-width: 30%; /* Adjust image size for smaller screens */
+    }
+}
+
+/* Styles for screens from 769px to 1024px (tablets) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    /* Add specific styles for tablets if needed */
+}
+
+/* Styles for screens larger than 1024px (PCs) */
+@media (min-width: 1025px) {
+    /* Add specific styles for PCs if needed */
+}
+
+
+
